@@ -28,15 +28,15 @@
   h1,h2,h3{font-family:var(--serif);font-weight:400}
   img{display:block;max-width:100%}
   a{color:inherit}
-  .label{font-family:var(--sans);font-size:12px;letter-spacing:.28em;text-transform:uppercase;font-weight:400}
+  .label{font-family:var(--sans);font-size:12px;letter-spacing:.28em;text-transform:lowercase;font-weight:400}
   .container{max-width:1150px;margin:0 auto;padding:0 24px}
 
   /* NAV */
   nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:20px 32px;transition:background .4s, box-shadow .4s}
   nav.scrolled{background:rgba(33,29,23,.92);backdrop-filter:blur(8px)}
-  nav .logo{font-family:var(--serif);font-size:22px;letter-spacing:.34em;color:var(--cream);text-decoration:none}
+  nav .logo{font-family:var(--serif);font-size:22px;letter-spacing:.34em;color:var(--cream);text-decoration:none;text-transform:lowercase}
   nav .links{display:flex;gap:28px}
-  nav .links a{color:var(--cream);text-decoration:none;font-size:12px;letter-spacing:.22em;text-transform:uppercase;opacity:.85}
+  nav .links a{color:var(--cream);text-decoration:none;font-size:12px;letter-spacing:.22em;text-transform:lowercase;opacity:.85}
   nav .links a:hover{opacity:1;color:var(--gold)}
   .burger{display:none;background:none;border:none;color:var(--cream);font-size:24px;cursor:pointer}
   @media(max-width:760px){
@@ -47,17 +47,17 @@
 
   /* HERO */
   .hero{position:relative;height:100svh;min-height:600px;display:flex;align-items:flex-end;color:var(--cream);overflow:hidden}
-  .hero::before{content:'';position:absolute;inset:0;background:url('hero.jpg') center 62%/cover no-repeat}
+  .hero::before{content:'';position:absolute;inset:0;background:url('hero.jpg') center 66%/cover no-repeat}
   .hero::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(23,20,15,.82) 0%,rgba(23,20,15,.12) 48%,rgba(23,20,15,.30) 100%)}
   @media(max-width:700px){.hero::before{background-position:55% 60%}}
   .hero .inner{position:relative;z-index:2;width:100%;padding:0 32px 9vh}
   .hero .stars{display:block;margin-bottom:20px}
-  .hero h1{font-size:clamp(52px,9vw,110px);letter-spacing:.3em;line-height:1;margin-bottom:14px}
+  .hero h1{font-size:clamp(52px,9vw,110px);letter-spacing:.3em;line-height:1;margin-bottom:14px;text-transform:lowercase}
   .hero p{font-family:var(--serif);font-style:italic;font-size:clamp(20px,2.6vw,30px);opacity:.92;margin-bottom:34px}
-  .btn{display:inline-block;font-family:var(--sans);font-size:12px;letter-spacing:.26em;text-transform:uppercase;text-decoration:none;padding:15px 38px;border:1px solid var(--cream);color:var(--cream);background:transparent;transition:.3s;cursor:pointer}
+  .btn{display:inline-block;font-family:var(--sans);font-size:12px;letter-spacing:.26em;text-transform:lowercase;text-decoration:none;padding:15px 38px;border:1px solid var(--cream);color:var(--cream);background:transparent;transition:.3s;cursor:pointer}
   .btn:hover{background:var(--cream);color:var(--ink)}
-  .btn.dark{border-color:var(--ink);color:var(--ink)}
-  .btn.dark:hover{background:var(--ink);color:var(--cream)}
+  .btn.ink{border-color:var(--ink);color:var(--ink);background:transparent}
+  .btn.ink:hover{background:var(--ink);color:var(--cream)}
   .btn.solid{background:var(--gold);border-color:var(--gold);color:var(--ink)}
   .btn.solid:hover{background:var(--cream);border-color:var(--cream)}
 
@@ -106,7 +106,7 @@
   .events{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:50px}
   .event-card{border:1px solid rgba(236,229,216,.25);padding:44px 40px;display:flex;flex-direction:column;gap:6px;position:relative}
   .event-card .date{font-family:var(--serif);font-size:64px;line-height:1}
-  .event-card .month{letter-spacing:.3em;text-transform:uppercase;font-size:13px;color:var(--gold);margin-bottom:14px}
+  .event-card .month{letter-spacing:.3em;text-transform:lowercase;font-size:13px;color:var(--gold);margin-bottom:14px}
   .event-card .meta{font-size:14px;opacity:.85;margin-bottom:22px}
   .event-card.tba{justify-content:center;align-items:flex-start;opacity:.75}
   @media(max-width:700px){.events{grid-template-columns:1fr}}
@@ -117,13 +117,13 @@
   .apply h2{font-size:clamp(32px,4vw,50px);font-style:italic;margin-bottom:18px}
   .apply .note{font-size:15px;opacity:.8;max-width:420px}
   form .field{margin-bottom:22px}
-  form label{display:block;font-size:12px;letter-spacing:.22em;text-transform:uppercase;margin-bottom:8px;color:var(--gold-dim)}
+  form label{display:block;font-size:12px;letter-spacing:.22em;text-transform:lowercase;margin-bottom:8px;color:var(--gold-dim)}
   form input,form select,form textarea{width:100%;background:transparent;border:none;border-bottom:1px solid rgba(33,29,23,.35);padding:10px 2px;font-family:var(--sans);font-size:16px;color:var(--ink);border-radius:0;-webkit-appearance:none}
   form input:focus,form select:focus,form textarea:focus{outline:none;border-bottom-color:var(--gold-dim)}
   form textarea{resize:vertical;min-height:70px}
 
   footer{background:var(--ink);color:var(--cream);padding:60px 0;text-align:center}
-  footer .logo{font-family:var(--serif);font-size:26px;letter-spacing:.34em;margin-bottom:10px}
+  footer .logo{font-family:var(--serif);font-size:26px;letter-spacing:.34em;margin-bottom:10px;text-transform:lowercase}
   footer p{font-size:13px;opacity:.6;letter-spacing:.08em}
   footer a{color:var(--gold);text-decoration:none}
 </style>
@@ -138,6 +138,7 @@
     <a href="#experience">The Experience</a>
     <a href="#film">Film</a>
     <a href="#upcoming">Upcoming</a>
+    <a href="#private">Private</a>
     <a href="#apply">Apply</a>
   </div>
 </nav>
@@ -183,13 +184,13 @@
     <div class="label section-label">The Experience</div>
     <h2 style="font-size:clamp(32px,4.4vw,54px);font-style:italic;max-width:760px;margin-bottom:26px">One evening like this changes your day. Many — change your life.</h2>
     <p class="exp-intro">A rooftop above the Tagus. As the sun sets behind the bridge, we move through breathwork, guided meditation and red light therapy — closing the day the way it was meant to be closed. Small groups. Intentional pace. Everything provided.</p>
-    <a class="btn dark" href="#apply">Apply for the next experience</a>
+    <a class="btn ink" href="#apply">Apply for the next experience</a>
 
     <div class="gallery">
       <img class="wide" src="DSC05527.jpg" alt="Guests stretching at sunset by the 25 de Abril bridge">
+      <img src="DSC05491.jpg" alt="Red light therapy equipment ready on the mat">
+      <img src="DSC05498.jpg" alt="Everything prepared before the session">
       <img src="DSC05516.jpg" alt="Meditation facing the river at sunset">
-      <img src="DSC05555.jpg" alt="Red light therapy at dusk">
-      <img src="DSC05543.jpg" alt="Group meditation above the Tagus">
       <img src="DSC05582.jpg" alt="Red light ritual after dark">
     </div>
 
@@ -230,7 +231,22 @@
   </div>
 </section>
 
-<section class="apply" id="apply">
+<section id="private">
+  <div class="container">
+    <div class="label section-label">Private Experiences</div>
+    <h2 style="font-size:clamp(32px,4.4vw,54px);font-style:italic;max-width:760px;margin-bottom:26px">Your evening. Your circle. Your ritual.</h2>
+    <p class="exp-intro">Beyond our open sessions, we create private experiences — designed around you, your people or your team. Any date, tailored pace, full privacy.</p>
+    <div class="pillars" style="margin-top:46px">
+      <div><div class="num">01</div><h3>Individual</h3><p>A one-to-one session built entirely around your body and your intention.</p></div>
+      <div><div class="num">02</div><h3>For two</h3><p>A romantic sunset ritual for you and your person — slow, quiet, unforgettable.</p></div>
+      <div><div class="num">03</div><h3>For friends</h3><p>Your own circle on the rooftop: breathwork, red light and conversation that matters.</p></div>
+      <div><div class="num">04</div><h3>For teams</h3><p>A corporate experience that actually restores people — offsites, rewards, leadership retreats.</p></div>
+    </div>
+    <a class="btn ink" href="#apply" style="margin-top:50px;display:inline-block">Request a private experience</a>
+  </div>
+</section>
+
+<section class="apply" id="apply" style="padding-top:0">
   <div class="container grid">
     <div>
       <div class="label section-label">Apply</div>
@@ -247,11 +263,15 @@
       <div class="field"><label for="event">Experience</label>
         <select id="event" name="event">
           <option>July 7 · MAAT Rooftop · 20:30</option>
+          <option>Private · individual</option>
+          <option>Private · for two</option>
+          <option>Private · group of friends</option>
+          <option>Corporate · for teams</option>
           <option>Future dates — keep me posted</option>
         </select>
       </div>
       <div class="field"><label for="message">Anything we should know?</label><textarea id="message" name="message"></textarea></div>
-      <button class="btn dark" type="submit">Send application</button>
+      <button class="btn ink" type="submit">Send application</button>
     </form>
   </div>
 </section>
